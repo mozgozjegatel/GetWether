@@ -15,6 +15,7 @@
 		ABB1917B25A2AB2500B597A7 /* GetWether.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABB1917925A2AB2500B597A7 /* GetWether.xcdatamodeld */; };
 		ABB1917D25A2AB2600B597A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB1917C25A2AB2600B597A7 /* Assets.xcassets */; };
 		ABB1918025A2AB2600B597A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB1917E25A2AB2600B597A7 /* LaunchScreen.storyboard */; };
+		ABE02F1325A5CFF200B30FC6 /* WetherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE02F1225A5CFF200B30FC6 /* WetherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ABB1917C25A2AB2600B597A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABB1917F25A2AB2600B597A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABB1918125A2AB2600B597A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABE02F1225A5CFF200B30FC6 /* WetherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				AB2E899825A4FFDB0095DF65 /* WetherManager.swift */,
+				ABE02F1225A5CFF200B30FC6 /* WetherData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE02F1325A5CFF200B30FC6 /* WetherData.swift in Sources */,
 				ABB1917525A2AB2500B597A7 /* ViewController.swift in Sources */,
 				ABB1917B25A2AB2500B597A7 /* GetWether.xcdatamodeld in Sources */,
 				AB2E899925A4FFDB0095DF65 /* WetherManager.swift in Sources */,

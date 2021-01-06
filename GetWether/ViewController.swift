@@ -19,6 +19,7 @@ class ViewController: UIViewController,  UITextFieldDelegate {
     @IBAction func citySearch(_ sender: UIButton) {
         wetherManager.fetchWether(city: cityTextFied.text!)
         wetherManager.performRequest(urlString: wetherManager.watherURL)
+        cityTextFied.endEditing(true)
     }
     
     @IBAction func coordinatesSearch(_ sender: UIButton) {
