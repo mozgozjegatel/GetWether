@@ -7,11 +7,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,  UITextFieldDelegate {
 
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var cityTextFied: UITextField!
+    @IBOutlet weak var tempLabel: UILabel!
+    @IBOutlet weak var tempImage: UIImageView!
+    
+    var wetherManager = WatherManager()
+    
+    @IBAction func citySearch(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func coordinatesSearch(_ sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        cityTextFied.delegate = self
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        return true
     }
 
 

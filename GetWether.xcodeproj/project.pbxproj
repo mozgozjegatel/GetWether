@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB2E899925A4FFDB0095DF65 /* WetherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E899825A4FFDB0095DF65 /* WetherManager.swift */; };
 		ABB1917125A2AB2500B597A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB1917025A2AB2500B597A7 /* AppDelegate.swift */; };
 		ABB1917325A2AB2500B597A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB1917225A2AB2500B597A7 /* SceneDelegate.swift */; };
 		ABB1917525A2AB2500B597A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB1917425A2AB2500B597A7 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB2E899825A4FFDB0095DF65 /* WetherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherManager.swift; sourceTree = "<group>"; };
 		ABB1916D25A2AB2500B597A7 /* GetWether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetWether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB1917025A2AB2500B597A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABB1917225A2AB2500B597A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		ABB1916F25A2AB2500B597A7 /* GetWether */ = {
 			isa = PBXGroup;
 			children = (
+				ABB1918825A2AB3000B597A7 /* Model */,
 				ABB1917025A2AB2500B597A7 /* AppDelegate.swift */,
 				ABB1917225A2AB2500B597A7 /* SceneDelegate.swift */,
 				ABB1917425A2AB2500B597A7 /* ViewController.swift */,
@@ -68,6 +71,14 @@
 				ABB1917925A2AB2500B597A7 /* GetWether.xcdatamodeld */,
 			);
 			path = GetWether;
+			sourceTree = "<group>";
+		};
+		ABB1918825A2AB3000B597A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E899825A4FFDB0095DF65 /* WetherManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 			files = (
 				ABB1917525A2AB2500B597A7 /* ViewController.swift in Sources */,
 				ABB1917B25A2AB2500B597A7 /* GetWether.xcdatamodeld in Sources */,
+				AB2E899925A4FFDB0095DF65 /* WetherManager.swift in Sources */,
 				ABB1917125A2AB2500B597A7 /* AppDelegate.swift in Sources */,
 				ABB1917325A2AB2500B597A7 /* SceneDelegate.swift in Sources */,
 			);
