@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,  UITextFieldDelegate {
+class ViewController: UIViewController,  UITextFieldDelegate, WeatherManagerDelegate {
 
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var cityTextFied: UITextField!
@@ -15,6 +15,7 @@ class ViewController: UIViewController,  UITextFieldDelegate {
     @IBOutlet weak var tempImage: UIImageView!
     
     var wetherManager = WatherManager()
+    
     
     @IBAction func citySearch(_ sender: UIButton) {
         wetherManager.fetchWether(city: cityTextFied.text!)
@@ -28,6 +29,7 @@ class ViewController: UIViewController,  UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         cityTextFied.delegate = self
+        wetherManager.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -36,7 +38,9 @@ class ViewController: UIViewController,  UITextFieldDelegate {
         
         return true
     }
-
-
+    func didUpdateWeather(weather: WeatherModel) {
+        print("Weather is: \(weather)")
+    }
+    
 }
 
