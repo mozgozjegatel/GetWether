@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct WeatherModel {
+struct CurrentWeatherModel: Decodable {
     let conditionID: Int
     let cityName: String
     let temperature: Double
     let lon: Double
     let lat: Double
+    let clouds: Int
     var temperatureString: String {
         get {
             return String.init(format: "%.1f", temperature)
